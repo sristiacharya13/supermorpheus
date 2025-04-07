@@ -46,7 +46,7 @@ export default function AddMemberForm({ onAdd }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="p-10 shadow-xl mb-20 flex flex-col gap-6 bg-white/10 backdrop-blur-lg rounded-xl max-w-xl mx-auto text-black text-lg"
+      className="p-10 shadow-xl font-inter mb-20 flex flex-col gap-6 bg-white/10 backdrop-blur-lg rounded-xl max-w-xl mx-auto text-black text-lg"
     >
       <h2 className="text-3xl font-bold text-[#262740]">Add New Member</h2>
 
