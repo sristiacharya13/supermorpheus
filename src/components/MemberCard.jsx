@@ -13,7 +13,7 @@ export default function MemberCard({ member }) {
   return (
     <div
       style={{ backgroundColor: 'rgba(255, 255, 250, 0.4)' }}
-      className="border-[0.1px] border-[#fcfcff] p-6 rounded-4xl shadow-xl transition-all text-black text-lg space-y-4 
+      className="border-[0.1px] border-[#fcfcff] p-6 rounded-4xl shadow-xl transition-all font-inter text-black text-lg space-y-4 
                  transform hover:scale-[1.025] hover:shadow-2xl cursor-pointer"
       onClick={() => setShowDetails((prev) => !prev)}
       tabIndex={0}
@@ -59,7 +59,7 @@ export default function MemberCard({ member }) {
               <span
                 key={index}
                 className="border border-[#bac7e7] bg-[#bac7e7] text-[#262740] px-3 py-1 rounded-full text-sm 
-                           hover:bg-[#a0b8e5] transition-colors duration-300 transform hover:scale-105"
+                           hover:bg-[#a0b8e5] font-inter transition-colors duration-300 transform hover:scale-105"
               >
                 {interest}
               </span>
