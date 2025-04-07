@@ -40,7 +40,7 @@ export default function MemberDirectory() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#8EC5FC] to-[#E0C3FC] text-white px-4 py-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6 text-center text-[#262740]">
+        <h1 className="text-5xl font-bold mb-6 text-center text-[#262740] font-poppins">
           Community Member Directory
         </h1>
 
@@ -54,7 +54,7 @@ export default function MemberDirectory() {
               placeholder="Search by name..."
               value={filter}
               onChange={e => setFilter(e.target.value)}
-              className="pl-10 pr-4 py-2 w-full rounded-4xl bg-[#262740]/40 text-white placeholder-gray-300 backdrop-blur-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="pl-10 pr-4 py-2 w-full rounded-4xl font-inter bg-[#262740]/40 text-white placeholder-gray-300 backdrop-blur-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
 
@@ -62,9 +62,9 @@ export default function MemberDirectory() {
           <div className="relative" ref={sortRef}>
             <button
               onClick={() => setShowSortOptions(prev => !prev)}
-              className="flex items-center justify-between px-4 py-2 rounded-4xl bg-[#262740]/40 text-white backdrop-blur-lg hover:bg-white/20 transition w-36"
+              className="flex items-center justify-between px-4 py-2 font-inter rounded-4xl bg-[#262740]/40 text-white backdrop-blur-lg hover:bg-white/20 transition w-36"
             >
-              <span className="flex items-center gap-1">
+              <span className="flex items-center gap-1 font-inter">
                 {sort === 'asc' ? <SortAsc size={18} /> : <SortDesc size={18} />}
                 {sort === 'asc' ? 'Sort A-Z' : 'Sort Z-A'}
               </span>
@@ -77,7 +77,7 @@ export default function MemberDirectory() {
                     setSort('asc');
                     setShowSortOptions(false);
                   }}
-                  className="px-4 py-2 hover:bg-white/20 cursor-pointer rounded-t-xl flex items-center gap-2"
+                  className="px-4 py-2 hover:bg-white/20 cursor-pointer font-inter rounded-t-xl flex items-center gap-2"
                 >
                   <SortAsc size={16} /> Sort A-Z
                 </div>
@@ -97,7 +97,7 @@ export default function MemberDirectory() {
           {/* Add Member Button */}
           <button
             onClick={() => setShowForm(!showForm)}
-            className="bg-[#262740] hover:bg-[#404167] text-white font-semibold px-4 py-2 rounded-4xl transition flex items-center justify-center gap-2 w-full sm:w-auto"
+            className="bg-[#262740] hover:bg-[#404167] text-white font-inter font-semibold px-4 py-2 rounded-4xl transition flex items-center justify-center gap-2 w-full sm:w-auto"
           >
             {showForm ? <X size={18} /> : <Plus size={18} />}
             {showForm ? 'Close Form' : 'Add Member'}
